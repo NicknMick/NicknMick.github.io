@@ -1,3 +1,42 @@
 <!DOCTYPE html>
-
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Module 01</title>
+</head>
+<body>
+<h1>Module 01:  Introduction to HTML</h1>
+  <h2>Created by: Nicholas Schwamborn</h2>
+  <hr>
+  <h3>Fettuccine Alfredo</h3>
+		<figure>
+          <a href="https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/" target="_blank">
+          <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8065111.jpg" alt="Fettucine Alfredo" title="Fettucine Alfredo Plate" width="125" height="150"/>
+          </a>
+			<p>
+				<figcaption>
+					This is a recipe for a delicious Fettuccine Alfredo to make at home!
+				</figcaption>
+			</p>
+		</figure>
+		<h4>More Recipes:</h4>
+		<p>
+          <a href="https://www.allrecipes.com/recipe/79543/fried-rice-restaurant-style/" target="_blank">
+			<img src="https://www.allrecipes.com/thmb/ympIQl1YNYWFMvwKLMLx8EnG-to=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/79543-fried-rice-restaurant-style-DDMFS-4x3-b79a6ea27e0344399257ca1df67ca1cd.jpg" alt="Fried Rice" title="Fried Rice Plat" width="100" height="75"/>
+          </a>
+          <a href="https://www.allrecipes.com/recipe/216077/garlic-bread-spread/" target="_blank">
+            <img src="https://www.allrecipes.com/thmb/eS7ubDEraw9npQ6pRC7c6og2T4I=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/216077-garlic-bread-spread-step-beauty-4x3-BP-3169-ef03a4a12d8c46e196055555be5b8d79.jpg" alt="Garlic Bread" title="Garlic Bread Stack" width="100" height="75"/>
+          </a>
+          <a href="https://www.allrecipes.com/recipe/273285/chef-johns-strawberry-crepe-cake/" target="_blank">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2Fbaf73c09d485094fbd60aa1c635ce398%2F16833941980405D8F883F-3DD6-49C2-AF5C-2A5E33A6C76D.jpeg&q=60&c=sc&orient=true&poi=auto&h=512" alt="Strawberry Crepe" title="Large Strawberry Crepe" width="100" height="75"/>
+          </a>
+          <a href="https://www.allrecipes.com/recipe/7016/french-toast-i/" target="_blank">
+            <img src="https://www.allrecipes.com/thmb/bGMh0MQ1sVEE7zjMdnviSB_hUOU=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/7016-french-toast-i-DDMFS-4x3-26c468d9cb284c2c83432bf2d33d49f8.jpg" alt="French Toast" title="French Toast Plate" width="100" height="75"/>
+          </a>
+          <a href="https://www.allrecipes.com/how-to-make-the-omelet-from-the-bear-7560284/" target="_blank">
+            <img src="https://www.allrecipes.com/thmb/5MWmGfNRUJBoZ6lTUwKcoNKn8JM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-the-bear-potato-chip-omelet-4x3-d9dd5bfcb40b49618ff7300b303fcbee.jpg" alt="French Omelete" title="Large French Omelete" width="100" height="75"/>
+          </a>
+        </p>
+</body>
 </html>
