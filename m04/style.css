@@ -1,1 +1,70 @@
-
+*
+{
+    font-family: Arial, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+}
+body
+{
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("images/cartoonbeach.jpg");
+    background-size: contain;
+}
+h1 {
+    font-family: 'LemonRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: orange;
+}
+#content
+{
+    overflow: auto;
+}
+#nav, #feature, #footer
+{
+    margin: 1%;
+}
+.column1, .column2, .column3
+{
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+li
+{
+    display: inline;
+    padding: 0.5em;
+}
+#nav, #footer
+{
+    background-color: pink;
+    padding: 0.5em 0;
+}
+#feature, .article
+{
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+}
+.column1
+{
+    background-color: lightblue;
+}
+.column2
+{
+    background-color: lightyellow;
+}
+.column3
+{
+    margin-right: 0%;
+    background-color: crimson;
+}
+#feature
+{
+    background-color: lightgreen;
+    background-image: url("images/beach-ball-illustration-png.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
