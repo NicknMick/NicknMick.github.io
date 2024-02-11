@@ -1,0 +1,13 @@
+body{
+    background-color: gray;
+}
+
+.topContainer{
+    display: flex;
+}
+
+.bottomContainer{
+    display: flex;
+}
+
+
