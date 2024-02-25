@@ -78,10 +78,9 @@ function email()
 function phone()
 {
     var userPhone = document.getElementById("Phone").value;
-    var newPhone = userPhone.replace(/[^a-zA-Z ]/g, "");
     var validPhoneNum = false;
     var errorMessages = "";
-    if (isNaN(userPhone) || newPhone.length > 15 || userPhone===null || userPhone==="")
+    if (isNaN(userPhone) || userPhone.length > 15 || userPhone===null || userPhone==="")
     {
         errorMessages += "<p>Invalid Phone Number</p>";
     }
