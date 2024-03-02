@@ -125,10 +125,20 @@ a:hover { color: #e78a8a; }
 .right { float: right; }
 .clear { clear: both; }
 
-.left h2 {
+#content .left h2 {
     text-align: center;
 }
 
-.right h2 {
+#content .left img {
+    width: 275px;
+    height: 150px;
+}
+
+#content .right h2 {
     text-align: center;
+}
+
+#content .right img {
+    width: 275px;
+    height: 150px;
 }
