@@ -142,3 +142,7 @@ a:hover { color: #e78a8a; }
     width: 275px;
     height: 150px;
 }
+
+.warning {
+    color: red;
+}

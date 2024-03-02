@@ -28,7 +28,7 @@
 
     <div id="content">
         <h2>Contact Form</h2>
-        <form action="thankYou.html" method="get" name="myContact">
+        <form action="thankYou.html" onsubmit=isValid(); name="myContact">
             <p>
             <label for="Name">Name:</label>
             <input type="text" id="Name" name="Name"/>
@@ -41,9 +41,11 @@
             <label for="Comment">Comment:</label>
             <input type="text" id="Comment" name="Comment"/>
             </p>
+            <div class="warning" id="fname"></div>
             <p>
-                <input type="submit" id="submit" name="submit" value="Submit"/>
+                <input type="submit" id="submit" name="submit" value="Submit">
             </p>
+            <div class="warning" id="submiterror"></div>
         </form>
         <div class="clear"> </div>
 
@@ -79,5 +81,6 @@
     </div>
 
 </div>
+<script src="javascript.js"></script>
 </body>
 </html>
