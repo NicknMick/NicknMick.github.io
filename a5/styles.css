@@ -1,0 +1,46 @@
+body {
+    background-color: #e78a8a;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 400px;
+}
+
+#images {
+    margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+#description {
+    text-align: center;
+    margin: 15px auto;
+    width: 500px;
+    height: 40px;
+}
+
+#buttonsSpace {
+    text-align: center;
+    margin: auto;
+    width: 500px;
+}
+
+#backButton {
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+
+#nextButton {
+    float: right;
+    width: 100px;
+    height: 25px;
+}
