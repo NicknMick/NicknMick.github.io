@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Portfolio Contact Me</title>
+</head>
+<body>
+<div id="wrap">
+
+    <div id="header">
+        <h1>Contact Me</h1>
+    </div>
+
+    <div id="topmenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="interests.html">Personal Interests</a></li>
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="artifacts.html">Artifacts</a></li>
+            <li><a href="moduleAssignments.html">Module Assignments</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+            <li><a href="validated.html">Validated</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h2>Contact Form</h2>
+        <form action="thankYou.html" onsubmit=isValid(); name="myContact">
+            <p>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name"/>
+            </p>
+            <p>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email"/>
+            </p>
+            <p>
+            <label for="Comment">Comment:</label>
+                <br>
+            <textarea id="Comment" name="Comment"></textarea>
+            </p>
+            <div class="warning" id="fname"></div>
+            <p>
+                <input type="submit" id="submit" name="submit" value="Submit">
+            </p>
+            <div class="warning" id="submiterror"></div>
+        </form>
+        <div class="clear"> </div>
+
+    </div>
+
+    <div class="clear"> </div>
+
+    <div id="footer">
+
+        <div class="left">
+            Copyright &copy; 2024 by <a href="https://nicknmick.github.io"> Nicholas Schwamborn </a>
+            <!-- W3C Markup Validator -->
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer"> <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /> </a>&nbsp;
+
+                <!-- W3C CSS Validator -->
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                </a>
+            </p>
+
+        </div>
+
+        <div class="right">
+            <!-- Please consider leaving the credit - link back to our website in the footer intact or if you want to remove it please buy link back free license on http://www.simpletemplates.org/simple-website-template-1.html
+            -->
+            Design by <a href="https://www.simpletemplates.org">Simple Website Templates</a>
+        </div>
+
+
+        <div class="clear"> </div>
+
+    </div>
+
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
