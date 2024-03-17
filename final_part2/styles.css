@@ -1,0 +1,9 @@
+body {
+    background-color: beige;
+}
+
+#content {
+    text-align: center;
+    margin: 15px auto;
+    width: 500px;
+}
