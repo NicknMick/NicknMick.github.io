@@ -3175,6 +3175,7 @@ input, select, textarea {
 			padding: 0.5rem 0 0 4.5rem;
 			position: relative;
 			width: 50%;
+			text-align: center;
 		}
 
 			ul.feature-icons li:before {
