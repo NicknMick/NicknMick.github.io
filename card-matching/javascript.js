@@ -1,3 +1,4 @@
+// Constant variables for HTML references
 const symbols = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 const cards = [...symbols, ...symbols].sort(() => Math.random() - 0.5);
 const cardArea = document.querySelector('.card-area');
@@ -10,6 +11,7 @@ const blur = document.querySelector('.blur-area');
 const timerText = document.querySelector('.timer-text');
 const movesText = document.querySelector('.moves-text');
 
+// Audios
 const cardFlipAudio = new Audio('Sounds/cardflip.mp3');
 const wrongAudio = new Audio('Sounds/wrongBuzzer.wav');
 const rightAudio = new Audio('Sounds/rightBuzzer.wav');
@@ -20,12 +22,14 @@ wrongAudio.volume = 0.05;
 rightAudio.volume = 0.1;
 winnerAudio.volume = 0.1;
 
+// Logic variables
 let firstPick = null;
 let secondPick = null;
 let numMoves = 0;
 let matchedPairs = 0;
 let timerInterval = null;
 
+// Create cards by creating a new card element and adding a specific symbol to its data.
 function createCards()
 {
     cardArea.innerHTML = '';
@@ -41,6 +45,7 @@ function createCards()
     });
 }
 
+// Handle card clicking by checking the selection first then comparing to the next selection for a match.
 function handleCardClick()
 {
     const clickedCard = event.currentTarget;
@@ -101,12 +106,14 @@ function handleCardClick()
     }
 }
 
+// Reset the user's selections
 function resetSelection()
 {
     firstPick = null;
     secondPick = null;
 }
 
+// Start the timer with a minute format and update minute value based on seconds.
 function startTimer()
 {
     let seconds = 0;
@@ -131,6 +138,7 @@ function startTimer()
     }, 1000);
 }
 
+// Enable winner screen and pause constant changes.
 function winGame()
 {
     winnerAudio.play();
@@ -141,6 +149,8 @@ function winGame()
     resultsScreen.querySelector('.move-result').textContent = `Moves Taken: ${numMoves}`;
 }
 
+
+// Set up game once user clicks play.
 playButton.addEventListener('click', () => {
     numMoves = 0;
     matchedPairs = 0;
@@ -165,6 +175,7 @@ resetButton.addEventListener('click', () => {
     blur.style.display = 'none';
 })
 
+// Revert back to main menu once quit button is clicked.
 quitButton.addEventListener('click', () => {
     cardArea.style.display = "none";
     infoArea.style.display = "block";
