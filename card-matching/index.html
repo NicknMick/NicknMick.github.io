@@ -10,6 +10,17 @@
 </head>
 <body>
 <div class="back-area">
+    <div class="blur-area"></div>
+    <div id="results">
+        <h1>You Win</h1>
+        <p class="time-result">Time Taken: 0:00</p>
+        <p class="move-result">Moves Taken: 0</p>
+        <button id="reset-button">Reset Game</button>
+    </div>
+    <div class="info-area">
+        <h1>Instructions</h1>
+        <p>Click on each card to match their letter to a corresponding card in the pile. If the two selected cards are different, they will be hidden again. If you match the cards, they will remain visible. </p>
+    </div>
     <div class="card-area">
         <div class="card">
             <h1>A</h1>
@@ -18,9 +29,11 @@
     <div class="menu-section">
         <h1>Card Matching Game</h1>
         <button id="play-button">Play Game</button>
-        <h3 class="timer">Time</h3>
-        <p class="timer-text">x</p>
+        <button id="quit-button">Quit Game</button>
+        <p class="timer-text"></p>
+        <p class="moves-text"></p>
     </div>
 </div>
 </body>
+<script src="javascript.js"></script>
 </html>

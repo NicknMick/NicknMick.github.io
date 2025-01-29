@@ -8,7 +8,7 @@ body {
     align-items: center;
 }
 
-h1 {
+h1, p {
     color: white;
 }
 
@@ -20,19 +20,36 @@ h1 {
     border-radius: 15px;
 }
 
+.info-area {
+    background-color: #4d4c4c;
+    width: 980px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.info-area p {
+    font-size: xx-large;
+    text-align: center;
+}
+
 .card-area {
     background-color: #4d4c4c;
     width: 980px;
     height: 500px;
     padding: 10px;
     border-radius: 10px;
-    display: grid;
-    justify-items: center;
+    display: none;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    place-items: center;
+    justify-content: center;
     align-content: center;
 }
 
 .card {
-    background-color: dodgerblue;
+    background-color: #145698;
     width: 100px;
     height: 100px;
     border-style: solid;
@@ -40,18 +57,58 @@ h1 {
     border-radius: 15px;
     align-content: center;
     justify-items: center;
+    font-size: larger;
+}
+
+#results {
+    display: none;
+    background-color: #6e6e6e;
+    width: 300px;
+    height: 460px;
+    border-style: solid;
+    border-color: #363636;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2;
+    left: 41.75%;
+    bottom: 35%;
+    text-align: center;
+    font-size: x-large;
 }
 
 .menu-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 1000px;
     height: auto;
     justify-items: center;
+    color: white;
 }
 
-.timer, .timer-text {
-    justify-self: right;
-    align-items: center;
+.menu-section h1, .menu-section #play-button {
+    grid-column: 2;
+}
+
+.menu-section h1 {
+    grid-row: 1;
+}
+
+.timer-text {
+    align-content: center;
+    text-align: center;
     color: white;
+    font-size: x-large;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.moves-text {
+    align-content: center;
+    color: white;
+    font-size: x-large;
+    grid-column: 3;
+    grid-row: 2;
 }
 
 #play-button {
@@ -61,8 +118,67 @@ h1 {
     border-color: white;
     border-style: solid;
     background-color: #5aaae5;
+    color: white;
+    grid-row: 2;
 }
 
 #play-button:active {
-    background-color: #3c729a;
+    background-color: #264b64;
 }
+
+#play-button:hover {
+    background-color: #5985a6;
+}
+
+#reset-button {
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: white;
+    border-style: solid;
+    background-color: #5aaae5;
+    color: white;
+    margin: 100px;
+}
+
+#reset-button:active {
+    background-color: #264b64;
+}
+
+#reset-button:hover {
+    background-color: #5985a6;
+}
+
+#quit-button {
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: white;
+    border-style: solid;
+    background-color: #5aaae5;
+    color: white;
+    grid-column: 2;
+    grid-row: 2;
+    display: none;
+}
+
+#quit-button:active {
+    background-color: #264b64;
+}
+
+#quit-button:hover {
+    background-color: #5985a6;
+}
+
+.blur-area {
+    width: 1000px;
+    height: 520px;
+    border-radius: 15px;
+    filter: blur(10px);
+    background-color: grey;
+    opacity: 75%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
