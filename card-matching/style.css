@@ -111,6 +111,14 @@ h1, p {
     grid-row: 2;
 }
 
+.total-moves-text {
+    align-content: center;
+    color: white;
+    font-size: x-large;
+    grid-column: 1;
+    grid-row: 2;
+}
+
 #play-button {
     height: 50px;
     width: 100px;

@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.sign-in-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+    height: 600px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 10px #465762;
+    -webkit-box-shadow: 0 0 10px #465762;
+    box-shadow: 0 0 10px #465762;
+    background-color: white;
+    align-content: center;
+}
+
+.sign-in-area button {
+    border-radius: 15px;
+    border-width: 1px;
+    width: 150px;
+    height: 35px;
+    background-color: #579ee5;
+    font-weight: bold;
+}
+
+.sign-in-area button:hover {
+    background-color: #3d75ab;
+}
+
+#create-account {
+    justify-items: center;
+    align-items: center;
+}
+
+#log-in {
+    justify-items: center;
+}
+
+.divider {
+    text-align: center;
+    align-content: center;
+}
+
+form h1 {
+    padding-bottom: 40px
+}
+

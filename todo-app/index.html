@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Todo List</title>
 </head>
 <body>
-
+<div class="sign-in-area">
+    <form id="log-in" method="post">
+        <h1>Log In</h1>
+        <p>
+            <label for="logName"></label>
+            <input type="text" id="logName" placeholder="Username" />
+        </p>
+        <p>
+            <label for="logPassword"></label>
+            <input type="password" id="logPassword" placeholder="Password" />
+        </p>
+        <p>
+            <button type="submit">Sign In</button>
+        </p>
+    </form>
+    <h1 class="divider">OR</h1>
+    <form id="create-account" method="post">
+        <h1>Create Account</h1>
+        <p>
+            <label for="crName"></label>
+            <input type="text" id="crName" placeholder="Username" />
+        </p>
+        <p>
+            <label for="crPassword"></label>
+            <input type="password" id="crPassword" placeholder="Password" />
+        </p>
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+</div>
 </body>
+<script src="script.js"></script>
 </html>
