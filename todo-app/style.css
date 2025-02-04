@@ -6,19 +6,23 @@ body {
     padding: 0;
     min-height: 100vh;
     background-color: #e0e0e0;
+    background-image: url("images/backgroundIMG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
 }
 
 .sign-in-area {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 900px;
+    width: 800px;
     height: 600px;
     border-radius: 15px;
     -moz-box-shadow: 0 0 10px #465762;
     -webkit-box-shadow: 0 0 10px #465762;
     box-shadow: 0 0 10px #465762;
     background-color: white;
-    align-content: center;
 }
 
 .sign-in-area button {
@@ -32,23 +36,181 @@ body {
 
 .sign-in-area button:hover {
     background-color: #3d75ab;
+    cursor: pointer;
 }
 
 #create-account {
+    display: none;
+    padding-top: 80px;
     justify-items: center;
     align-items: center;
 }
 
 #log-in {
+    padding-top: 80px;
     justify-items: center;
-}
-
-.divider {
-    text-align: center;
-    align-content: center;
+    align-items: center;
 }
 
 form h1 {
     padding-bottom: 40px
 }
 
+.front-title {
+    text-align: center;
+}
+
+.show-create {
+    text-align: center;
+    color: dodgerblue;
+}
+
+.show-create:hover {
+    cursor: pointer;
+}
+
+.show-login {
+    display: none;
+    text-align: center;
+    color: dodgerblue;
+}
+
+.show-login:hover {
+    cursor: pointer;
+}
+
+.todo-list-area {
+    width: 1200px;
+    height: 800px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 10px #465762;
+    -webkit-box-shadow: 0 0 10px #465762;
+    box-shadow: 0 0 10px #465762;
+    background-color: white;
+}
+
+.todo-list-area h1 {
+    padding-left: 35px;
+    font-size: xxx-large;
+}
+
+.list-area {
+    width:  1100px;
+    height: 600px;
+    background-color: #cbcbcb;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+
+.list-area ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10px;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.task-card {
+    width: 250px;
+    height: 275px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.task-card .desc {
+    height: 55px;
+}
+
+.task-card .desc textarea {
+    resize: none;
+    border: none;
+    height: 55px;
+    width: 230px;
+}
+
+.task-card .desc textarea:disabled {
+    background-color: white;
+}
+
+.task-card form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+}
+
+.task-card button {
+    border-radius: 15px;
+    border-width: 1px;
+    width: 70px;
+    height: 35px;
+    background-color: #579ee5;
+    font-weight: bold;
+}
+
+.task-card button:hover {
+    background-color: #3d75ab;
+    cursor: pointer;
+}
+
+.task-card .edit-card {
+    grid-column: 1
+}
+
+.task-card .delete-card {
+    grid-column: 3
+}
+
+.task-card .complete-card {
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+.task-card .complete-card button {
+    width: 150px
+}
+
+.task-card h2 {
+    padding-left: 10px;
+}
+
+.task-card .desc, .task-card .completion {
+    padding-left: 10px;
+}
+
+#list-modification {
+    height: 40px;
+    justify-items: center;
+    align-content: center;
+}
+
+#list-modification button {
+    border-radius: 15px;
+    border-width: 1px;
+    width: 150px;
+    height: 35px;
+    background-color: #579ee5;
+    font-weight: bold;
+}
+
+#list-modification button:hover {
+    background-color: #3d75ab;
+    cursor: pointer;
+}
+
+.logoutButton {
+    border-radius: 15px;
+    border-width: 1px;
+    width: 150px;
+    height: 35px;
+    background-color: #ce0000;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.logoutButton:hover {
+    background-color: #9a0000;
+    cursor: pointer;
+}

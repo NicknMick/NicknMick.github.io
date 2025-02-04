@@ -10,6 +10,7 @@
 </head>
 <body>
 <div class="sign-in-area">
+    <h1 class="front-title">Todo List Creation</h1>
     <form id="log-in" method="post">
         <h1>Log In</h1>
         <p>
@@ -24,7 +25,6 @@
             <button type="submit">Sign In</button>
         </p>
     </form>
-    <h1 class="divider">OR</h1>
     <form id="create-account" method="post">
         <h1>Create Account</h1>
         <p>
@@ -36,9 +36,46 @@
             <input type="password" id="crPassword" placeholder="Password" />
         </p>
         <p>
+            <label for="confirmPass"></label>
+            <input type="password" id="confirmPass" placeholder="Confirm Password" />
+        </p>
+        <p>
             <button type="submit">Create</button>
         </p>
     </form>
+    <p class="show-create">Don't have an account? Create one!</p>
+    <p class="show-login">Already have an account? Log in!</p>
+</div>
+<div class="todo-list-area hidden">
+    <h1>Todo List</h1>
+    <div class="list-area">
+        <ul>
+            <li>
+                <div class="task-card hidden">
+                    <h2>Task Title</h2>
+                    <p class="desc"><textarea>Task Description</textarea></p>
+                    <p class="completion">Completed: False</p>
+                    <form>
+                        <p class="edit-card">
+                            <button type="button">Edit</button>
+                        </p>
+                        <p class="delete-card">
+                            <button type="button">Delete</button>
+                        </p>
+                        <p class="complete-card">
+                            <button type="button">Mark as Complete</button>
+                        </p>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <form id="list-modification" method="post">
+        <p>
+            <button type="submit">New List</button>
+        </p>
+    </form>
+    <button class="logoutButton">Logout</button>
 </div>
 </body>
 <script src="script.js"></script>
