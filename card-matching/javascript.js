@@ -255,6 +255,7 @@ resetButton.addEventListener('click', () => {
     quitButton.style.display = "none";
     resultsScreen.style.display = "none";
     clearInterval(timerInterval);
+    timerInterval = null;
     timerText.textContent = '';
     movesText.textContent = '';
     blur.style.display = 'none';
@@ -268,6 +269,7 @@ quitButton.addEventListener('click', () => {
     playButton.style.display = "block";
     quitButton.style.display = "none";
     clearInterval(timerInterval);
+    timerInterval = null;
     timerText.textContent = '';
     movesText.textContent = '';
     sessionStorage.clear();
