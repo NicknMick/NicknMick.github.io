@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/NicknMick.github.io",
   plugins: [react()],
+  base: "/NicknMick.github.io/react-matching/"
 })
